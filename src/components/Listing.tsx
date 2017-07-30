@@ -12,9 +12,6 @@ interface Listing {
 }
 
 export const Listing: SFC<Listing> = ({todos}) => {
-
-    console.log(todos)
-    // return <div>Listing</div>
     return todos
         .filter((aTodo: Todo) => aTodo.completed)
         .map((aTodah: Todo) => (
